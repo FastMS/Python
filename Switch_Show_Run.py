@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 
+# purpose: grab running configs from the various switches
+# created on: 10-18-22
+# created by: FastMS
 import pexpect
 import re
-from os import system
+import os
+import subprocess
 from getpass import getpass
 from netmiko import ConnectHandler
 from netmiko import SSHDetect
-import os
-import subprocess
 
 os.system('clear')
 
